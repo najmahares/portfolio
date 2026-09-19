@@ -1,0 +1,134 @@
+/* --- CSS Variables (Design System) --- */
+:root {
+  --bg: #0a0a0a;
+  --bg-alt: #111111;
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+  --accent: #8b5cf6;
+  --accent-hover: #7c3aed;
+  --card-bg: #1a1a1a;
+  --border: #2a2a2a;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --radius: 12px;
+  --font-main: "Inter", sans-serif;
+}
+
+/* ... (Keep your existing Reset, Utility, Typography, Navbar, Hero, About styles) ... */
+
+/* --- Updated Stats Cards --- */
+.stat-card h3 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+  line-height: 1;
+}
+
+.stat-card p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.stat-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+/* --- Updated Skills Section --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skill-category:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.skill-category h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+/* --- Updated Projects Section --- */
+.project-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* --- Updated Footer Personal Card --- */
+.personal-card {
+  text-align: left;
+}
+
+.personal-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.personal-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.personal-focus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.personal-focus span {
+  font-size: 0.75rem;
+  background-color: rgba(139, 92, 246, 0.1);
+  color: var(--accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* --- Project Details Page Updates --- */
+.project-subtitle {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-header-content .project-subtitle {
+  font-size: 1.25rem;
+}

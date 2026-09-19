@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRAXIS | Najma Hares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">&lt;Najma/&gt;</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects" class="active">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <a href="mailto:haresnajma@gmail.com" class="btn btn-primary magnetic"
+          >Let's Talk</a
+        >
+      </div>
+    </nav>
+
+    <main class="container section">
+      <div class="breadcrumbs reveal">
+        <a href="index.html">Home</a> /
+        <a href="index.html#projects">Projects</a> /
+        <span>PRAXIS</span>
+      </div>
+
+      <a href="index.html#projects" class="btn btn-outline back-btn reveal">
+        ← Back to Projects
+      </a>
+
+      <header class="project-header card reveal">
+        <div class="project-header-content">
+          <span class="badge">FEATURED PROJECT · 2026</span>
+          <h1>PRAXIS</h1>
+          <p class="project-subtitle">
+            Interactive stock market learning through simulation
+          </p>
+          <p>
+            PRAXIS is an interactive financial market learning platform that
+            teaches beginners how the stock market works by letting them
+            practice it. Learners receive KSh 100,000 in virtual capital,
+            research real companies, make simulated decisions, and reason
+            through outcomes with an AI mentor named Nuru that adapts to their
+            progress. No real money is ever involved.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary magnetic"
+            >
+              View Live Site →
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline magnetic"
+            >
+              Read the Case Study
+            </a>
+          </div>
+        </div>
+        <div
+          class="project-header-img tilt-card"
+          style="
+            background-image: url(&quot;assets/praxis-hero.png&quot;);
+            background-size: 130%;
+            background-position: center;
+          "
+        ></div>
+      </header>
+
+      <div class="project-layout">
+        <div class="project-main">
+          <section class="project-section reveal">
+            <h2>Overview</h2>
+            <p>
+              PRAXIS is a practice environment for the stock market, built for
+              people who have never invested before. It replaces passive
+              financial education (reading articles, watching videos, memorizing
+              definitions) with something closer to a flight simulator: a safe
+              space where you make real decisions, see what happens, and learn
+              from the outcome without risking a shilling.
+            </p>
+            <p>
+              The core loop is
+              <strong
+                >Learn, Research, Decide, Experience, Reflect, Improve</strong
+              >. Each cycle ends with the learner explaining why they made a
+              decision, the system showing what actually happened, and Nuru, an
+              AI mentor designed to ask better questions rather than give
+              answers, helping them connect the choice to the outcome.
+            </p>
+            <p>
+              The product is deliberately not a brokerage, not an investment
+              advice platform, and not a generic finance course. Every screen
+              reinforces that this is simulated, educational, and free of risk.
+            </p>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>The Challenge</h2>
+            <p>
+              Someone learning to invest today faces a real gap. They can study
+              every beginner's guide and still freeze the moment a real decision
+              appears. Reading about risk is not the same as experiencing it.
+              The distance between "I understand what a P/E ratio is" and "I
+              know whether this stock is worth my money" is exactly where most
+              beginners stop.
+            </p>
+            <p>
+              Existing tools do not close this gap. Trading simulators assume
+              you already know the vocabulary. Financial literacy apps test
+              recall rather than build judgment. Brokerage demo accounts can
+              reinforce poor instincts because nothing meaningful is at stake.
+              General AI assistants answer "what should I buy?" directly, which
+              is the opposite of what a beginner needs.
+            </p>
+            <p>
+              PRAXIS starts from a different premise. The learner makes the
+              decision, explains their reasoning, and sees the result. The
+              mentor's job is to ask the questions that surface what the learner
+              missed. That reflection is the mechanism through which judgment,
+              not just information, is built.
+            </p>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>My Contribution</h2>
+            <p>Every part of the product, from research through to launch.</p>
+            <div class="contribution-grid">
+              <div class="feature-item tilt-card">
+                <strong>Product &amp; Research</strong>
+                <span
+                  >Defined the core product loop, the safety framing, the
+                  learning outcomes, and the mentor persona through user
+                  interviews and competitive analysis.</span
+                >
+              </div>
+              <div class="feature-item tilt-card">
+                <strong>UX &amp; Visual Design</strong>
+                <span
+                  >Designed the full interface system: light first editorial
+                  layout, restrained typography, status tinted cards, dark mode,
+                  and an original SVG brand mark for the AI mentor.</span
+                >
+              </div>
+              <div class="feature-item tilt-card">
+                <strong>Frontend Engineering</strong>
+                <span
+                  >Built the landing page, auth flow, dashboard, learning
+                  journey, practice library, market explorer, virtual portfolio,
+                  mentor, and progress views in Next.js 16 with React 19 and
+                  TypeScript.</span
+                >
+              </div>
+              <div class="feature-item tilt-card">
+                <strong>Backend &amp; Data</strong>
+                <span
+                  >Built the API layer for authentication, learning content,
+                  market data, portfolio state, learner memory, and the mentor.
+                  PostgreSQL with pgvector.</span
+                >
+              </div>
+              <div class="feature-item tilt-card">
+                <strong>AI &amp; Prompt Engineering</strong>
+                <span
+                  >Designed the mentor end to end: streaming responses, per turn
+                  memory extraction, semantic retrieval, inline Mermaid
+                  diagrams, and adaptive quizzes.</span
+                >
+              </div>
+              <div class="feature-item tilt-card">
+                <strong>Security Engineering</strong>
+                <span
+                  >Server side keys only, HttpOnly sessions, CSRF protection,
+                  rate limiting, whitelisted markdown rendering, and open
+                  redirect protection.</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>The Solution</h2>
+            <p>
+              PRAXIS is a complete learning platform: landing page,
+              authentication, application shell, dashboard, learning journey,
+              practice library, market explorer with real Kenyan companies,
+              virtual portfolio, progress view, bookmarks, notifications, and a
+              full AI mentor experience.
+            </p>
+            <p>
+              Learning content is organized across five areas:
+              <strong>Market Fundamentals</strong>,
+              <strong>Risk and Portfolio Construction</strong>,
+              <strong>Market Mechanics</strong>,
+              <strong>Company Analysis</strong>, and
+              <strong>Economic Environment</strong>. Each concept is taught
+              through short lessons that lead into a practice scenario where the
+              concept is tested.
+            </p>
+            <p>
+              The mentor, Nuru, is what makes the product distinctive. It
+              streams responses from Groq with a Gemini fallback, renders
+              financial concepts as live diagrams, generates educational
+              illustrations on request, and offers adaptive quizzes. Every
+              conversation runs through an extraction pass that identifies
+              durable facts about the learner and stores them with vector
+              embeddings so future conversations can retrieve what matters.
+            </p>
+            <p>
+              Above all, PRAXIS is honest about what it is. The mentor will not
+              tell you what to buy. It will not predict prices. Every screen
+              carries a safety line and every simulated trade is clearly
+              labeled.
+            </p>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>Engineering Deep Dive</h2>
+            <p>
+              The mentor pipeline is the technically interesting piece. A user
+              message triggers a chain: embedding the query, retrieving relevant
+              durable facts from PostgreSQL via pgvector, building a system
+              prompt that combines a fixed persona with dynamic context,
+              streaming a completion from Groq, and then a second silent
+              extraction request that pulls durable facts from the turn and
+              persists them.
+            </p>
+            <p>
+              The rendering pipeline avoids the usual LLM chat pitfalls.
+              Assistant responses are parsed by a hand written markdown renderer
+              that supports a strict whitelist and produces React elements
+              directly. No raw HTML injection on the assistant's own text.
+              Diagrams render with Mermaid's strict security mode. Images are
+              proxied through a server route so the browser never touches the AI
+              provider directly.
+            </p>
+            <p>
+              Security was treated as a first class concern from the first
+              commit. Every API route re-validates input, sessions live in
+              HttpOnly cookies with a CSRF double submit token, and every
+              external provider call has a timeout and friendly error mapping.
+            </p>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>Quality Assurance</h2>
+            <p>
+              Every feature shipped under a personal pre QA gate before manual
+              review.
+            </p>
+            <div class="features-grid">
+              <div class="feature-item tilt-card">
+                TypeScript compile, zero errors
+              </div>
+              <div class="feature-item tilt-card">ESLint clean</div>
+              <div class="feature-item tilt-card">
+                Production build succeeds
+              </div>
+              <div class="feature-item tilt-card">Console free of errors</div>
+              <div class="feature-item tilt-card">All routes load directly</div>
+              <div class="feature-item tilt-card">
+                Server side re-validation
+              </div>
+              <div class="feature-item tilt-card">Keyboard navigable</div>
+              <div class="feature-item tilt-card">Reduced motion respected</div>
+              <div class="feature-item tilt-card">Dark mode WCAG AA</div>
+              <div class="feature-item tilt-card">
+                No secrets in client bundles
+              </div>
+              <div class="feature-item tilt-card">
+                Authorization on scoped resources
+              </div>
+              <div class="feature-item tilt-card">
+                Error and empty states everywhere
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+              <div class="feature-item tilt-card">Learn and Practice loop</div>
+              <div class="feature-item tilt-card">
+                Virtual portfolio simulation
+              </div>
+              <div class="feature-item tilt-card">
+                AI mentor with persistent memory
+              </div>
+              <div class="feature-item tilt-card">Inline Mermaid diagrams</div>
+              <div class="feature-item tilt-card">
+                Adaptive interactive quizzes
+              </div>
+              <div class="feature-item tilt-card">
+                Market explorer with real companies
+              </div>
+              <div class="feature-item tilt-card">Concept signal tracking</div>
+              <div class="feature-item tilt-card">
+                Decision reasoning capture
+              </div>
+              <div class="feature-item tilt-card">
+                Progress and reflection view
+              </div>
+              <div class="feature-item tilt-card">
+                Secure session architecture
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section reveal">
+            <h2>Project Artifacts</h2>
+            <p>
+              Explore the live product, source code and design work behind
+              PRAXIS.
+            </p>
+            <div class="artifact-list">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="artifact-item"
+              >
+                <span>Live Site</span><span>↗</span>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="artifact-item"
+              >
+                <span>GitHub Repository</span><span>↗</span>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="artifact-item"
+              >
+                <span>Design System Reference</span><span>↗</span>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="artifact-item"
+              >
+                <span>Case Study Write-up</span><span>↗</span>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="artifact-item"
+              >
+                <span>Demo Walkthrough Video</span><span>↗</span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="project-sidebar reveal">
+          <div class="sidebar-widget tilt-card">
+            <h3>Project Details</h3>
+            <ul class="details-list">
+              <li><span>Role</span>Software Engineer · Product · UX · AI</li>
+              <li><span>Timeline</span>2026</li>
+              <li><span>Context</span>Solo Project</li>
+              <li>
+                <span>Scope</span>Research → Product → UX → Design → Engineering
+                → AI → QA
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-widget tilt-card">
+            <h3>Technology</h3>
+            <div class="tech-stack">
+              <span class="badge-sm">Next.js 16</span>
+              <span class="badge-sm">React 19</span>
+              <span class="badge-sm">TypeScript</span>
+              <span class="badge-sm">PostgreSQL</span>
+              <span class="badge-sm">pgvector</span>
+              <span class="badge-sm">Groq</span>
+              <span class="badge-sm">Gemini</span>
+              <span class="badge-sm">Cloudflare AI</span>
+              <span class="badge-sm">Mermaid</span>
+              <span class="badge-sm">Node.js</span>
+            </div>
+          </div>
+          <div class="sidebar-widget tilt-card">
+            <h3>Capabilities</h3>
+            <div class="tech-stack">
+              <span class="badge-sm">Product Strategy</span>
+              <span class="badge-sm">UX Design</span>
+              <span class="badge-sm">Frontend</span>
+              <span class="badge-sm">Backend</span>
+              <span class="badge-sm">AI / LLM</span>
+              <span class="badge-sm">Prompt Engineering</span>
+              <span class="badge-sm">Security</span>
+              <span class="badge-sm">Accessibility</span>
+              <span class="badge-sm">QA</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="project-nav reveal">
+        <a href="index.html#projects" class="link-arrow"
+          >← Back to All Projects</a
+        >
+        <a href="project.html" class="link-arrow">Next: Auditerra →</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Najma Hares Muhumed. All rights reserved.</p>
+        <p>Made with ❤️ by Najma</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
