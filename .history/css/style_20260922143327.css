@@ -1480,13 +1480,16 @@ p {
 }
 .zigzag-row.left .zigzag-card,
 .zigzag-row.right .zigzag-card {
+  grid-column: 1;
   text-align: left;
 }
 
-.zigzag-card h3,
-.zigzag-card p,
-.zigzag-desc,
-.zigzag-topics,
-.zigzag-number {
-  text-align: left;
+.zigzag-row.left .zigzag-empty,
+.zigzag-row.right .zigzag-empty {
+  display: none;
+}
+
+.zigzag-row.right .zigzag-node {
+  background-color: var(--accent-purple);
+  box-shadow: 0 0 0 2px var(--accent-purple);
 }

@@ -1478,15 +1478,3 @@ p {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-.zigzag-row.left .zigzag-card,
-.zigzag-row.right .zigzag-card {
-  text-align: left;
-}
-
-.zigzag-card h3,
-.zigzag-card p,
-.zigzag-desc,
-.zigzag-topics,
-.zigzag-number {
-  text-align: left;
-}
